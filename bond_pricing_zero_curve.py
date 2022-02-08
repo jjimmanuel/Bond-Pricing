@@ -1,5 +1,5 @@
 
-# 5-year bond
+# 30-year bond
 # face value = $1000
 # market rate of 3%
 # annual coupon payment of 5%
