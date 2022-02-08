@@ -16,7 +16,7 @@ spotDates = [Date(1, 1, 2010), Date(1, 1, 2011), Date(1, 1, 2015), Date(1, 1, 20
 spotRates = [0.03, 0.03, 0.03, 0.03, 0.03]
 
 day_count = Actual365Fixed()
-calendar = NullCalendar()
+calendar = UnitedStates()
 interpolation = Linear()
 compounding = Compounded
 compounding_frequency = Annual
@@ -30,7 +30,7 @@ spotCurveHandle = YieldTermStructureHandle(spotCurve)
 issuedate = Date(1, 1, 2010)
 maturitydate = Date(1, 1, 2040)
 tenor = Period(Annual)
-calendar = NullCalendar()
+calendar = UnitedStates()
 businessconvention = Unadjusted
 dategeneration = DateGeneration.Backward
 monthend = False
