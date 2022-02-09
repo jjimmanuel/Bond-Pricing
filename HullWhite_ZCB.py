@@ -59,10 +59,14 @@ def price(T, t, f0, rt):
 
 for i in range(1, steps+1):
     prices[i] = price(length, dt * i, rate, rates.values[i])
+prices[0] = price(length, dt * 0, rate, rates.values[0])
 
 
 print(prices)
 
+plt.xvalue("Steps")
+plt.yvalue("Discount Factor")
+plt.title("Zero Coupon Bond Price Change(%))
 plt.plot(prices)
 plt.show()
 
