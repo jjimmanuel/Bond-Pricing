@@ -4,3 +4,5 @@ First time using Quantlib, so I wanted to do something simple.
 I tried a Spot Curve and a Flat Curve to see I would get different results; in this example, I did not. However, changing the spot rates for the treasuries would alter the bond value accordingly. 
 
 
+I also priced a zero coupon bond (rate of 0.01, volatility of 0.01, and alpha of 0.1: all made up) using the Hull White Model. 
+
