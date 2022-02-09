@@ -31,6 +31,8 @@ hw_process = HullWhiteProcess(curveHandle, a, sigma)
 rng = ql.GaussianRandomSequenceGenerator(ql.UniformRandomSequenceGenerator(steps, ql.UniformRandomGenerator()))
 seq = ql.GaussianPathGenerator(hw_process, length, steps, rng, False)
 
+# Interest Rate Generator
+
 def generate_paths(n_scenarios):
     arr = np.zeros((n_scenarios, steps+1))
     for i in range(n_scenarios):
